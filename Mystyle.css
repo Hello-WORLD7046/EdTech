@@ -1,0 +1,387 @@
+/* Reset some default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbfafb;
+  font-family: Arial, sans-serif;
+  color: #0e0e0e;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style the header */
+.number1 {
+  background-color: #000000;
+  color: #fff;
+  height: 140px;
+  margin-bottom: 25px;
+}
+
+.number1 .EdTechlogo1 .photo {
+  width: 200px;
+  margin-top: 10px;
+  animation: blinker 2s linear infinite;
+}
+
+.number1 .welcome h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 36px;
+  top: 5%;
+  margin-left: 37%;
+  font-family: Audiowide;
+
+}
+
+.firstnav {
+  height: 1%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.firstnav .HOME {
+  position: relative;
+  text-decoration: crimson;
+  color: rgb(160, 13, 43);
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 20 10 10 px;
+  transition: 0.3s;
+
+}
+
+.firstnav .HOME::after {
+  content: "";
+  position: absolute;
+  border-radius: 40x;
+  background-color: rgb(160, 13, 43);
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+
+.firstnav .HOME:hover {
+  color: rgb(10, 10, 75);
+  transition: 0.3s;
+}
+
+.firstnav .HOME:hover::after {
+  width: 95%;
+}
+
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e40a0a;
+  font-weight: bold;
+}
+
+/* Style the main content */
+main {
+  padding: 20px;
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  color: #0a0909;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn-getstart {
+  display: inline-block;
+  padding: 20px;
+  background-color: #010a15;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  content: '\00bb';
+  margin: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  width: 150px;
+}
+
+.btn-getstart span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  z-index: 20;
+}
+
+.btn-getstart span:after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  transition: 0.5s;
+  background: #fff;
+  height: 155px;
+  left: -105px;
+  opacity: .7;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 30px;
+  z-index: -10;
+}
+
+.btn-getstart:hover span:after {
+  left: 155%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-getstart:hover {
+  background-color: #f00707;
+}
+
+
+/* ########################################################################################################################################### */
+.contentdata {
+  position: relative;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.contentdata .content01 .question1 h2 {
+  text-align: left;
+  font-size: 48px;
+  font-style: oblique;
+  margin-left: 400px;
+  margin-bottom: 10px;
+}
+
+.contentdata .content01 .question1 span {
+  animation: blinker 2s linear infinite;
+}
+
+.contentdata .content01 .answer1 p {
+  font-size: 24px;
+  text-align: left;
+  text-align: justify;
+  margin-left: 150px;
+  width: 40%;
+  font-family: cursive;
+}
+
+.contentdata .content01 .question1photo img
+{
+  text-align: right;
+  margin-top: -600px;
+  border-radius: 30px;
+  width: 400px;
+  margin-left: 700px;
+
+}
+
+
+/* ########################################################################################################################################### */
+/* Style the footer */
+.footer {
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #d3d3d3;
+  height: 350px;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 80px;
+  /* padding-bottom: 200px; */
+}
+
+.footer .footer-creater {
+  background: #343a34;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #686868;
+  text-align: center;
+  position: absolute;
+  height: 20px;
+  width: 99.8%;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  border: 1px solid #0f0808;
+}
+
+.footer .footer-content {
+  height: 314px;
+  display: flex;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+}
+
+.footer .footer-content .footer-section.about .logo-text
+{
+  font-family: cursive;
+
+}
+.footer .footer-content .footer-section.about .logo-text span {
+  color: #05f7ff;
+  margin-left: 50px;
+  font-size: 38px;
+  font-family: cursive;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: white;
+  font-weight: 900;
+}
+
+.footer .footer-content .footer-section.about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.footer .footer-content .about p {
+  font-size: 14px;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid grey;
+  width: 35px;
+  height: 35px;
+  padding-top: 10px;
+  /* margin-right: 1px; */
+  margin-left: 100px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 50px;
+  margin: 0 10px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+/* for  links */
+.footer .footer-content .about .socials .fa.fa-facebook {
+  color: white
+}
+
+.footer .footer-content .about .socials .fa.fa-instagram {
+  color: crimson;
+}
+
+.footer .footer-content .about .socials .fa.fa-twitter {
+  color: black;
+}
+
+.footer .footer-content .about .socials .fa.fa-youtube {
+  color: red;
+}
+
+.footer .footer-content .about .socials a:hover {
+  border: 1px solid red;
+  transition: all .3s;
+  transform: scale(1.2);
+}
+
+.footer .footer-content .links ul a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  transition: all .3s;
+}
+
+.footer .footer-content .links ul a:hover {
+  margin-left: 20px;
+  transition: all .3s;
+}
+
+.footer .footer-content .branding img {
+  margin-left: 230px;
+  width: 120px;
+  transition: 1s;
+}
+
+.footer .footer-content .branding .logo2footer:hover {
+  transform: scale(1.2);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  /* box-shadow: 0 5px 15px rgba(172, 14, 14, 0.35); */
+  box-shadow: 0 5px 15px rgba(0, 3, 202, 0.35);
+}
+
+
+/* ############################################################################################################################# */
+
+/* Responsive design - adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+ .number1
+ {
+  width: 100%;
+ }
+ .number1 .welcome h1
+ {
+
+  font-size: 30px;
+  top: 30px;
+ }
+
+ .firstnav .HOME
+ {
+  font-size: 19px;
+  width: 170%;
+ }
+ .hero .hero-content img
+ {
+  width: 450px;
+ }
+}
